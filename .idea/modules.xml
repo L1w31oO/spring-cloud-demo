@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-api/micro-service-cloud-api.iml" filepath="$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-api/micro-service-cloud-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-consumer-dept-80/micro-service-cloud-consumer-dept-80.iml" filepath="$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-consumer-dept-80/micro-service-cloud-consumer-dept-80.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-eureka-7001/micro-service-cloud-eureka-7001.iml" filepath="$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-eureka-7001/micro-service-cloud-eureka-7001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-eureka-7002/micro-service-cloud-eureka-7002.iml" filepath="$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-eureka-7002/micro-service-cloud-eureka-7002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-eureka-7003/micro-service-cloud-eureka-7003.iml" filepath="$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-eureka-7003/micro-service-cloud-eureka-7003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-provider-dept-8001/micro-service-cloud-provider-dept-8001.iml" filepath="$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-provider-dept-8001/micro-service-cloud-provider-dept-8001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-provider-dept-8002/micro-service-cloud-provider-dept-8002.iml" filepath="$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-provider-dept-8002/micro-service-cloud-provider-dept-8002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-provider-dept-8003/micro-service-cloud-provider-dept-8003.iml" filepath="$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-provider-dept-8003/micro-service-cloud-provider-dept-8003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-cloud-demo.iml" filepath="$PROJECT_DIR$/.idea/spring-cloud-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-demo02/spring-cloud-demo02.iml" filepath="$PROJECT_DIR$/spring-cloud-demo02/spring-cloud-demo02.iml" />
+    </modules>
+  </component>
+</project>
