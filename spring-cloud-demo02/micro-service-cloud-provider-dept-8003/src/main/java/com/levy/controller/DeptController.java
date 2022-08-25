@@ -1,10 +1,12 @@
 package com.levy.controller;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.levy.domain.Dept;
 import com.levy.service.DeptService;
@@ -33,6 +35,22 @@ public class DeptController {
   @GetMapping("/dept/list")
   public List<Dept> list(){
     return deptService.selectAll();
+  }
+
+  /**
+   * 超时测试,该服务的响应时间为 5 秒
+   *
+   * @return serverPort
+   */
+  @RequestMapping(value = "/dept/feign/timeout")
+  public String deptFeignTimeout() {
+    // 暂停 5 秒
+    try {
+      TimeUnit.SECONDS.sleep(5);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
+    return serverPort;
   }
 
 }
