@@ -1,5 +1,6 @@
 package com.levy.service.impl;
 
+import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 import org.springframework.stereotype.Service;
 import com.levy.service.DeptService;
@@ -18,9 +19,8 @@ public class DeptServiceImpl implements DeptService {
   }
 
   /**
-   * HystrixCommand 注解，该注解说明如下：
-   *    参数 fallbackMethod 属性用于指定降级方法。
-   *    参数 execution.isolation.thread.timeoutInMilliseconds 用于设置自身调用超时时间的峰值，峰值内可以正常运行，否则执行降级方法
+   * HystrixCommand 注解，该注解说明如下： 参数 fallbackMethod 属性用于指定降级方法。 参数 execution.isolation.thread.timeoutInMilliseconds
+   * 用于设置自身调用超时时间的峰值，峰值内可以正常运行，否则执行降级方法
    */
   @HystrixCommand(
       fallbackMethod = "deptTimeoutHandler",
@@ -37,6 +37,34 @@ public class DeptServiceImpl implements DeptService {
       e.printStackTrace();
     }
     return "线程池：" + Thread.currentThread().getName() + "  deptInfoTimeout, id: " + id + ", 耗时: " + outTime;
+  }
+
+  @Override
+  @HystrixCommand(
+      fallbackMethod = "deptCircuitBreakerFallback",
+      commandProperties = {
+          // 以下参数在 HystrixCommandProperties 类中有默认配置
+          @HystrixProperty(name = "circuitBreaker.enabled", value = "true"),  // 是否开启熔断器
+          @HystrixProperty(name = "metrics.rollingStats.timeInMilliseconds", value = "1000"),  // 统计时间窗
+          @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "10"),  // 统计时间窗内请求次数
+          @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "10000"),  // 休眠时间窗口期
+          @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "60"),
+          // 在统计时间窗口期以内，请求失败率达到 60% 时进入熔断状态
+      })
+  public String deptCircuitBreaker(Integer id) {
+    if (id < 0) {
+      // 当传入的 id 为负数时，抛出异常，调用降级方法
+      throw new RuntimeException("id 不能是负数！");
+    }
+    UUID serialNum = UUID.randomUUID();
+    return Thread.currentThread().getName() + "\t" + "调用成功，流水号为：" + serialNum;
+  }
+
+  /**
+   * deptCircuitBreaker 的降级方法
+   */
+  public String deptCircuitBreakerFallback(Integer id) {
+    return "id 不能是负数,请稍后重试!\t id:" + id;
   }
 
   /**
