@@ -4,5 +4,10 @@
       "name": "ribbon.ReadTimeout",
       "type": "java.lang.String",
       "description": "Description for ribbon.ReadTimeout."
-  }
-] }
+    },
+    {
+      "name": "hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds",
+      "type": "java.lang.String",
+      "description": "Description for hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds."
+    }
+  ] }

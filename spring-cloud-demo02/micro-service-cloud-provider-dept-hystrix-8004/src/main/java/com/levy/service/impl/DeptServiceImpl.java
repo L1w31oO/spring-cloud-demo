@@ -30,7 +30,7 @@ public class DeptServiceImpl implements DeptService {
       })
   @Override
   public String deptInfoTimeout(Integer id) {
-    int outTime = 6;
+    int outTime = 4;
     try {
       TimeUnit.SECONDS.sleep(outTime);
     } catch (InterruptedException e) {
