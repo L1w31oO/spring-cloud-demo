@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="micro-service-cloud-eureka-7001" />
+        <module name="micro-service-cloud-provider-dept-hystrix-8004" />
         <module name="micro-service-cloud-eureka-7003" />
         <module name="micro-service-cloud-provider-dept-8001" />
         <module name="micro-service-cloud-eureka-7002" />
@@ -30,6 +31,7 @@
       <module name="micro-service-cloud-provider-dept-8002" target="1.8" />
       <module name="micro-service-cloud-provider-dept-8002 (1)" target="1.8" />
       <module name="micro-service-cloud-provider-dept-8003" target="1.8" />
+      <module name="micro-service-cloud-provider-dept-hystrix-8004" target="1.8" />
       <module name="spring-cloud-demo02" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -46,6 +48,7 @@
       <module name="micro-service-cloud-provider-dept-8002" options="-parameters" />
       <module name="micro-service-cloud-provider-dept-8002 (1)" options="-parameters" />
       <module name="micro-service-cloud-provider-dept-8003" options="-parameters" />
+      <module name="micro-service-cloud-provider-dept-hystrix-8004" options="-parameters" />
       <module name="spring-cloud-demo02" options="" />
     </option>
   </component>
