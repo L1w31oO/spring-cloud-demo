@@ -13,6 +13,7 @@
         <module name="micro-service-cloud-provider-dept-8001" />
         <module name="micro-service-cloud-eureka-7002" />
         <module name="micro-service-cloud-provider-dept-8002" />
+        <module name="micro-service-cloud-consumer-dept-hystrix-dashboard-9002" />
         <module name="micro-service-cloud-provider-dept-8003" />
         <module name="micro-service-cloud-consumer-dept-80" />
         <module name="micro-service-cloud-consumer-dept-feign" />
@@ -23,6 +24,7 @@
       <module name="micro-service-cloud-api" target="1.8" />
       <module name="micro-service-cloud-consumer-dept-80" target="1.8" />
       <module name="micro-service-cloud-consumer-dept-feign" target="1.8" />
+      <module name="micro-service-cloud-consumer-dept-hystrix-dashboard-9002" target="1.8" />
       <module name="micro-service-cloud-eureka-7001" target="1.8" />
       <module name="micro-service-cloud-eureka-7002" target="1.8" />
       <module name="micro-service-cloud-eureka-7003" target="1.8" />
@@ -40,6 +42,7 @@
       <module name="micro-service-cloud-api" options="-parameters" />
       <module name="micro-service-cloud-consumer-dept-80" options="-parameters" />
       <module name="micro-service-cloud-consumer-dept-feign" options="-parameters" />
+      <module name="micro-service-cloud-consumer-dept-hystrix-dashboard-9002" options="-parameters" />
       <module name="micro-service-cloud-eureka-7001" options="-parameters" />
       <module name="micro-service-cloud-eureka-7002" options="-parameters" />
       <module name="micro-service-cloud-eureka-7003" options="-parameters" />

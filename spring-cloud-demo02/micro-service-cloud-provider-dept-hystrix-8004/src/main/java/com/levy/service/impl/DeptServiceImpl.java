@@ -48,8 +48,7 @@ public class DeptServiceImpl implements DeptService {
           @HystrixProperty(name = "metrics.rollingStats.timeInMilliseconds", value = "1000"),  // 统计时间窗
           @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "10"),  // 统计时间窗内请求次数
           @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "10000"),  // 休眠时间窗口期
-          @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "60"),
-          // 在统计时间窗口期以内，请求失败率达到 60% 时进入熔断状态
+          @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "60"),  // 在统计时间窗口期以内，请求失败率达到 60% 时进入熔断状态
       })
   public String deptCircuitBreaker(Integer id) {
     if (id < 0) {
