@@ -1,6 +1,7 @@
 package com.levy.controller;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author liwei515
  */
+
+@RefreshScope  // 为了让动态（手动）的获取最新的git 配置，在添加 actuator 监控加载 RefreshScope，
 @RestController
 public class ConfigClientController {
 
