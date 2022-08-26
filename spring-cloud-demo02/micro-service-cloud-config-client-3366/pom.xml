@@ -12,10 +12,10 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
 
-  <artifactId>micro-service-cloud-config-client-3355</artifactId>
+  <artifactId>micro-service-cloud-config-client-3366</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>micro-service-cloud-config-client-3355</name>
-  <description>micro-service-cloud-config-client-3355</description>
+  <name>micro-service-cloud-config-client-3366</name>
+  <description>micro-service-cloud-config-client-3366</description>
 
   <properties>
     <java.version>1.8</java.version>

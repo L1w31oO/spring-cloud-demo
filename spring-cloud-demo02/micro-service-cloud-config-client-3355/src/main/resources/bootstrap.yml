@@ -13,6 +13,13 @@ spring:
       #这里不要忘记添加 http:// 否则无法读取
       uri: http://localhost:3344 #Spring Cloud Config 服务端（配置中心）地址
 
+  ##### RabbitMQ 相关配置，15672 是web 管理界面的端口，5672 是 MQ 的访问端口###########
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
 eureka:
   client: #将客户端注册到 eureka 服务列表内
     service-url:
