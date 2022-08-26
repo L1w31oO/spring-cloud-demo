@@ -28,7 +28,7 @@ spring:
             - Path=/get/**
           filters:
             - PrefixPath=/dept #在请求路径上增加一个前缀 /dept
-            
+
 eureka:
   instance:
     instance-id: micro-service-cloud-gateway-9527
