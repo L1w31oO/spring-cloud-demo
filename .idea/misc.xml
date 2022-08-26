@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-config-client-3366/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-alibaba-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-alibaba-demo/spring-cloud-alibaba-provider-8001/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-alibaba-demo/spring-cloud-alibaba-consumer-nacos-8801/pom.xml" />
       </list>
     </option>
   </component>

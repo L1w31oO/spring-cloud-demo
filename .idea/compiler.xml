@@ -22,6 +22,7 @@
         <module name="micro-service-cloud-provider-dept-8003" />
         <module name="micro-service-cloud-config-client-3355" />
         <module name="micro-service-cloud-config-client-3366" />
+        <module name="spring-cloud-alibaba-consumer-nacos-8801" />
         <module name="micro-service-cloud-api" />
       </profile>
     </annotationProcessing>
@@ -41,6 +42,7 @@
       <module name="micro-service-cloud-provider-dept-8002" target="1.8" />
       <module name="micro-service-cloud-provider-dept-8003" target="1.8" />
       <module name="micro-service-cloud-provider-dept-hystrix-8004" target="1.8" />
+      <module name="spring-cloud-alibaba-consumer-nacos-8801" target="1.8" />
       <module name="spring-cloud-alibaba-demo" target="1.8" />
       <module name="spring-cloud-alibaba-provider-8001" target="1.8" />
       <module name="spring-cloud-demo02" target="1.8" />
@@ -63,7 +65,8 @@
       <module name="micro-service-cloud-provider-dept-8002" options="-parameters" />
       <module name="micro-service-cloud-provider-dept-8003" options="-parameters" />
       <module name="micro-service-cloud-provider-dept-hystrix-8004" options="-parameters" />
-      <module name="spring-cloud-alibaba-demo" options="-parameters" />
+      <module name="spring-cloud-alibaba-consumer-nacos-8801" options="-parameters" />
+      <module name="spring-cloud-alibaba-demo" options="" />
       <module name="spring-cloud-alibaba-provider-8001" options="-parameters" />
       <module name="spring-cloud-demo02" options="" />
     </option>
