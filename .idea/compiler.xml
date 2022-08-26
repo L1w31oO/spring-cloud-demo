@@ -17,6 +17,7 @@
         <module name="micro-service-cloud-consumer-dept-80" />
         <module name="micro-service-cloud-consumer-dept-feign" />
         <module name="micro-service-cloud-gateway-9527" />
+        <module name="spring-cloud-alibaba-provider-8001" />
         <module name="micro-service-cloud-consumer-dept-hystrix-dashboard-9002" />
         <module name="micro-service-cloud-provider-dept-8003" />
         <module name="micro-service-cloud-config-client-3355" />
@@ -24,7 +25,7 @@
         <module name="micro-service-cloud-api" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8">
       <module name="micro-service-cloud-api" target="1.8" />
       <module name="micro-service-cloud-config-center-3344" target="1.8" />
       <module name="micro-service-cloud-config-client-3355" target="1.8" />
@@ -37,11 +38,11 @@
       <module name="micro-service-cloud-eureka-7003" target="1.8" />
       <module name="micro-service-cloud-gateway-9527" target="1.8" />
       <module name="micro-service-cloud-provider-dept-8001" target="1.8" />
-      <module name="micro-service-cloud-provider-dept-8001 (1)" target="1.8" />
       <module name="micro-service-cloud-provider-dept-8002" target="1.8" />
-      <module name="micro-service-cloud-provider-dept-8002 (1)" target="1.8" />
       <module name="micro-service-cloud-provider-dept-8003" target="1.8" />
       <module name="micro-service-cloud-provider-dept-hystrix-8004" target="1.8" />
+      <module name="spring-cloud-alibaba-demo" target="1.8" />
+      <module name="spring-cloud-alibaba-provider-8001" target="1.8" />
       <module name="spring-cloud-demo02" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -59,12 +60,12 @@
       <module name="micro-service-cloud-eureka-7003" options="-parameters" />
       <module name="micro-service-cloud-gateway-9527" options="-parameters" />
       <module name="micro-service-cloud-provider-dept-8001" options="-parameters" />
-      <module name="micro-service-cloud-provider-dept-8001 (1)" options="-parameters" />
       <module name="micro-service-cloud-provider-dept-8002" options="-parameters" />
-      <module name="micro-service-cloud-provider-dept-8002 (1)" options="-parameters" />
       <module name="micro-service-cloud-provider-dept-8003" options="-parameters" />
       <module name="micro-service-cloud-provider-dept-hystrix-8004" options="-parameters" />
-      <module name="spring-cloud-demo02" options="-parameters" />
+      <module name="spring-cloud-alibaba-demo" options="-parameters" />
+      <module name="spring-cloud-alibaba-provider-8001" options="-parameters" />
+      <module name="spring-cloud-demo02" options="" />
     </option>
   </component>
 </project>
