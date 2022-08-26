@@ -3,6 +3,7 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-config-center-3344/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-config-client-3355/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-consumer-dept-80/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-consumer-dept-feign/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-demo02/micro-service-cloud-consumer-dept-hystrix-dashboard-9002/src/main/java" charset="UTF-8" />
